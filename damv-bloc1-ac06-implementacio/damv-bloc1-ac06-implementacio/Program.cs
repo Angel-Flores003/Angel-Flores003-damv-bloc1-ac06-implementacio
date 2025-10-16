@@ -4,19 +4,15 @@ public class Program
 {
     public static void Main()
     {
-        // PRECONDITION: The user is prompted to input the width and height of a rectangle.
-        const string Msg_Input_Width = "Enter the width of the rectangle: ",
-            Msg_Input_Height = "Enter the height of the rectangle: ",
-            Msg_Result = "The area of the rectangle is: ";
-        double widht, height, area;
-        Console.WriteLine(Msg_Input_Height);
-        widht = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine(Msg_Input_Height);
-        height = Convert.ToInt32(Console.ReadLine());
-        area = widht * height;
-        Console.WriteLine(Msg_Result + area);
-        /* POSTCONDITION: 'area' contains the product of 'width' and 'height', 
-         and it is displayed. */
-
+        // PRECONDITION: The user is prompted to input an amount in euros.
+        const double Exchage_Rate = 1.12;
+        const string Msg_Input = "Enter amount in euros: ",            
+            Msg_Result = "Amount in dollars: ";
+        double euros, dollars;
+        Console.WriteLine(Msg_Input);
+        euros = Convert.ToInt32(Console.ReadLine());
+        dollars = euros * Exchage_Rate;
+        Console.WriteLine(Msg_Result + dollars);
+        // POSTCONDITION: 'dollars' contains the converted amount, and it is displayed.
     }
 }
