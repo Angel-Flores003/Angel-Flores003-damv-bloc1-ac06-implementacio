@@ -4,14 +4,19 @@ public class Program
 {
     public static void Main()
     {
-        // PRECONDITION: The user is prompted to input a temperature in Celsius.
-        const string Msg_Input = "Enter temperature in Celsius: ",
-            Msg_Result = "Temperature in Kelvin: ";
-        double celsius, kelvin;
-        Console.WriteLine(Msg_Input);
-        celsius = Convert.ToDouble(Console.ReadLine());
-        kelvin = celsius + 273.15;
-        Console.WriteLine(Msg_Result + kelvin);
-        // POSTCONDITION: 'kelvin' contains the converted temperature, and it is displayed.
+        // PRECONDITION: The user is prompted to input the width and height of a rectangle.
+        const string Msg_Input_Width = "Enter the width of the rectangle: ",
+            Msg_Input_Height = "Enter the height of the rectangle: ",
+            Msg_Result = "The area of the rectangle is: ";
+        double widht, height, area;
+        Console.WriteLine(Msg_Input_Height);
+        widht = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(Msg_Input_Height);
+        height = Convert.ToInt32(Console.ReadLine());
+        area = widht * height;
+        Console.WriteLine(Msg_Result + area);
+        /* POSTCONDITION: 'area' contains the product of 'width' and 'height', 
+         and it is displayed. */
+
     }
 }
